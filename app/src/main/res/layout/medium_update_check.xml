@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f6f9"
+    android:id="@+id/updateContainer">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView4" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="170dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Data terbaru sudah"
+                    android:id="@+id/textView"
+                    android:textColor="#798ca7" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="tersedia"
+                        android:id="@+id/textView2"
+                        android:textColor="#798ca7" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/updateLine"
+                        android:background="#00a4e7"
+                        android:layout_margin="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perbaharui"
+                android:id="@+id/btnUpdate"
+                android:background="#00a4e7"
+                android:textColor="#fff"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="50dp"
+                android:paddingLeft="50dp"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Memperbaharui data produk"
+                android:id="@+id/tvUpdatingInfo"
+                android:textColor="#ff4081"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:id="@+id/updateSkip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Tidak sekarang,"
+                    android:id="@+id/tvUpdateSkip"
+                    android:textColor="#798ca7" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lewati"
+                    android:id="@+id/btnUpdateSkip"
+                    android:background="#f2f6f9"
+                    android:textColor="#00a4e7"
+                    android:paddingLeft="2dp"
+                    android:clickable="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

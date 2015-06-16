@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">GJM-App</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <!-- menu strings -->
+    <string name="action_settings">Pengaturan</string>
+    <string name="action_list">Produk</string>
+    <string name="action_news">Berita</string>
+    <string name="action_exit">Keluar</string>
+
+
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#00a4e7">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnMainMenu"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="#00a4e7"
+            android:scaleType="fitXY"
+            android:src="@drawable/menutop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="GJM-App"
+            android:id="@+id/tvMainTitle"
+            android:layout_weight="10"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="25dp"
+            android:textColor="#fff" />
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:clickable="false">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/profpic"
+                android:layout_gravity="center"
+                android:src="@drawable/usericon" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/statusIndicator"
+                android:background="@drawable/onupdate"
+                android:layout_gravity="center|right"
+                android:scaleType="fitXY" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f2f6f9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Berita Terbaru"
+            android:id="@+id/tvNewsListPageTitle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#b3c1d4" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <com.example.adi.gjm_app.EndlessListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lstNews"
+                android:dividerHeight="0dp"
+                android:divider="@null" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

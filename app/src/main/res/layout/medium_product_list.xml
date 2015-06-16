@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#00a4e7">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnMainMenu"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="#00a4e7"
+            android:scaleType="fitXY"
+            android:src="@drawable/menutop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="GJM-App"
+            android:id="@+id/tvMainTitle"
+            android:layout_weight="10"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="25dp"
+            android:textColor="#fff" />
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:clickable="false">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/profpic"
+                android:layout_gravity="center"
+                android:src="@drawable/usericon" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/statusIndicator"
+                android:background="@drawable/onupdate"
+                android:layout_gravity="center|right"
+                android:scaleType="fitXY" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="2850 results in 14 pages (1/14)"
+        android:id="@+id/tvProductListInfo"
+        android:background="#55c5f3"
+        android:padding="5dp"
+        android:textSize="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/mainListProduct">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/lstProduct"
+            android:layout_marginBottom="50dp"
+            android:background="#f2f6f9"
+            android:dividerHeight="0dp"
+            android:divider="@null" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="0dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:id="@+id/blockPaging"
+                android:layout_gravity="bottom">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Prev"
+                    android:id="@+id/btnProductListPrevPage"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:textColor="#8092ab" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Next"
+                    android:id="@+id/btnProductListNextPage"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:textColor="#8092ab" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Go to"
+                    android:id="@+id/btnProductListGoto"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:textColor="#8092ab" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Find"
+                    android:id="@+id/btnProductListFind"
+                    android:layout_weight="1"
+                    android:background="#ff4081"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
